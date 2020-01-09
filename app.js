@@ -6,6 +6,7 @@ var signinid = null
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.set("view engine", "ejs")
+app.use(express.static('public'))
     
 app.listen(8000, function() {
     console.log("server started")
